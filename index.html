@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <div class="box">
+        <header>
+            <h1>Total Expense: <span id="tExp">$0</span></h1>
+        </header>
+        <div class="addExp">
+            <input type="number" id="amount" placeholder="Amount" required>
+            <div class="custom-select" >
+                <select id="category">
+                  <option value="Bills">Bills</option>
+                  <option value="Food">Food</option>
+                  <option value="Travel">Travel</option>
+                  <option value="Entertainment">Entertainment</option>
+                </select>
+              </div>
+            
+            <input type="date" name="date" id="date">
+            <button id="add">Add</button>
+        </div>
+        <div class="display">
+            <table id="table">
+                <!-- Fill later with actual data -->
+                <thead>
+                    <tr>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="expenseTable">
+                    <!-- Expenses will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+        <div class="chart">
+            <!-- Chart later -->
+            <canvas id="expenseChart">
+
+            </canvas>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="path/to/chartjs/dist/chart.umd.js"></script>
+    <script>
+        const myChart = new Chart(ctx, {...});
+    </script>
+
+</body>
+</html>
